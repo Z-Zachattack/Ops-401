@@ -1,13 +1,13 @@
-# Ops Challenge: File Encryption Script Part 2 of 3 
+# Ops Challenge: File Encryption Script Part 1 of 3 
 
 ## Overview
 
-Encryption of data at rest is a common need in security operations. Today you will continue development of a Python script that encrypts data.
+Encryption of data at rest is a common need in security operations. Today you will begin development of a Python script that encrypts a single file.
 
 ## Resources
 
-- [Python: List Of Files In Directory And Subdirectories](https://appdividend.com/2020/01/20/python-list-of-files-in-directory-and-subdirectories/)
-- [Recursive File and Directory Manipulation in Python](https://www.pythoncentral.io/recursive-file-and-directory-manipulation-in-python-part-1/)
+- [Python Cryptography 3.1.1 Package](https://pypi.org/project/cryptography/)
+- [How to Encrypt and Decrypt Files in Python](https://www.thepythoncode.com/article/encrypt-decrypt-files-symmetric-python)
 
 ## Demonstration
 
