@@ -1,4 +1,6 @@
-# Script Name:                  Challenge 06
+#!/usr/bin/env python3
+
+# Script Name:                  Class 05
 # Author:                       Zachariah Woodbridge
 # Date of latest revision:      16 Jan 2024
 # Purpose:                      Python script that Encrypts/Decrypts files and messages.
