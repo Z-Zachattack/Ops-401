@@ -58,7 +58,6 @@ def decrypt_message(encrypted_message, key):
 
 # Function to recursively encrypt a folder and its contents
 def encrypt_folder(folder_path, key):
-    fernet = Fernet(key)
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             file_path = os.path.join(root, file)
@@ -68,7 +67,6 @@ def encrypt_folder(folder_path, key):
 
 # Function to recursively decrypt an encrypted folder and its contents
 def decrypt_folder(folder_path, key):
-    fernet = Fernet(key)
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             file_path = os.path.join(root, file)
