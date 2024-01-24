@@ -58,26 +58,26 @@ def ping_sweep():
         response = sr1(IP(dst=str(host)) / ICMP(), timeout=1, verbose=0)
 
         if response is None:
-            print(f"Host {host} is down or unresponsive.")
+            print(f"Host {host} is down")
         elif int(response.getlayer(ICMP).type) == 3 and int(response.getlayer(ICMP).code) in [1, 2, 3, 9, 10, 13]:
-            print(f"Host {host} is actively blocking ICMP traffic.")
+            print(f"Host {host} is blocking ICMP traffic.")
         else:
             print(f"Host {host} is responding.")
             # Creates counter of live hosts
             host_count += 1
 
-    print(f"Total hosts online: {host_count}")
+    print(f"Total hosts: {host_count}")
 
 def main():
     global ip_list
     global host_count
 
     while True:
-        print("Tool Menu:")
+        print("Menu:")
         print("1. ICMP Ping Sweep")
         print("2. TCP Port Range Scanner")
         print("3. Quit")
-        choice = input("Enter your choice: ")
+        choice = input("Choose: ")
 
         if choice == "1":
             # ICMP Ping Sweep mode
