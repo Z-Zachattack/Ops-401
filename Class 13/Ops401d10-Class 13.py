@@ -1,17 +1,16 @@
-# Script Name:                  Challenge [..]
+# Script Name:                  Class 13
 # Author:                       Zachariah Woodbridge
-# Date of latest revision:      09 Jan 2024
-# Purpose:                      Python script that [...]
+# Date of latest revision:      24 Jan 2024
+# Purpose:                      Python script that pings an IP address determined by the user; If the host exists, scan its ports and determine if any are open.
+# Disclaimer:                   This script was written with the assistance of codeium.
 
-# Imports
-
+# Declaration of imports
 import scapy.all as scapy
 from scapy.all import ICMP, IP, sr1, TCP, send
 
-# Functions 
+# Declaration of variables
 
-
-
+# Declaration of functions
 # Ping Sweeper
 def ping():
     target_ip = input("Enter the target IP address: ")
@@ -54,7 +53,6 @@ def scan_port(host, port):
         print(f"Port {port} is in an unknown state.")
 
 # Main 
-
 if __name__ == "__main__":
     ping()
 
