@@ -9,8 +9,10 @@
 import paramiko
 import time
 import os
+import nltk
 from nltk.corpus import words
 
+# Declare Functions
 def pw_filepath():
     while True:
         filepath = input("Input the complete filepath for the password list (press enter for default /home/rockyou-test.txt): ") or "/home/rockyou-test.txt"
@@ -19,8 +21,36 @@ def pw_filepath():
         else:
             print("File not found. Please enter a valid filepath.")
 
-# Declare Functions
+# Download the 'words' dataset from the NLTK library and return the list of words.
+def get_words():
+   nltk.download('words')
+   word_list = words.words()
+   return word_list
+
+# Check if a word is in the given list of words.
+def check_for_word(word_list):
+   user_answer = input("Enter a word: ")
+   if user_answer in word_list:
+       print(f"{user_answer} is in the dictionary")
+   else:
+       print(f"{user_answer} is not in the dictionary")
+
+def load_external_file(filepath):
+   password_list = []
+   with open(filepath, 'r') as file:
+       for line in file:
+           line = line.strip()  # Remove leading/trailing whitespace
+           password_list.append(line)
+   return password_list
+
+def defensive(filepath):
+    word_list = get_words()  # Download the words dataset
+    load_external_file()  # Load the external file
+    check_for_word(word_list)  # Check for a word in the word list
+
 def offensive(filepath):
+    
+
     # Open the wordlist
     with open(filepath, 'r') as file:
         line = file.readline()
@@ -89,7 +119,7 @@ def main():
     if mode == "1":
         offensive(filepath)
     elif mode == "2":
-        defensive()
+        defensive(filepath)
     elif mode == "3":
         ssh_authentication(filepath)
     else:
