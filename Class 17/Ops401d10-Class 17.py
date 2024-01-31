@@ -111,7 +111,7 @@ def main():
     # Print menu
     print("Select a mode:")
     print("Mode 1: Offensive; Dictionary Iterator")
-    print("Mode 2: Defensive; Password Recognized ***DEFUNCT***")
+    print("Mode 2: Defensive; Password Recognized")
     print("Mode 3: Authenticate to SSH Server")
 
     mode = input("Enter the mode number (1, 2, or 3): ")
