@@ -1,13 +1,12 @@
-<h2>**Lab: Data File Encryption and Hashing**</h2>
+## **Lab: Data File Encryption and Hashing**
 
 
-<h3>**Overview**</h3>
-
+### **Overview**
 
 Encryption plays a vital role in the securing of data on computer systems, and can serve many purposes. Sometimes, encryption is used for good: Keeping confidential data out of the hands of criminals. Other times, encryption is used for more nefarious deeds, such as locking files with ransomware. If the organization needs to protect sensitive information, the security professional should be prepared with solutions to facilitate the confidentiality and integrity of a given data both at rest and in motion.
 
-<h3>**Objectives**</h3>
 
+### **Objectives**
 
 
 
@@ -15,8 +14,8 @@ Encryption plays a vital role in the securing of data on computer systems, and c
 * Use SCP via terminal to copy a file from your local PC to the AWS instance
 * Dump that hash of your Linux instance’s user credentials
 
-<h3>**Resources**</h3>
 
+### **Resources**
 
 
 
@@ -27,11 +26,11 @@ Encryption plays a vital role in the securing of data on computer systems, and c
 * [How to Un-shadow the file and dump Linux password Beginner’s Guide](https://www.cyberpratibha.com/unshadow-the-file-and-dump-linux-password/)
 * [How to Crack Passwords with John the Ripper](https://medium.com/@sc015020/how-to-crack-passwords-with-john-the-ripper-fdb98449ff1)
 
-<h3>**Tasks**</h3>
+
+### **Tasks**
 
 
-<h4>**Part 1: Staging**</h4>
-
+#### **Part 1: Staging**
 
 Prepare the following operating systems for today’s lab:
 
@@ -43,8 +42,8 @@ Prepare the following operating systems for today’s lab:
 ![alt_text](images/image1.png "image_tooltip")
 
 
-<h4>**Part 2: Secure File Transmission with SCP and SFTP on Linux**</h4>
 
+#### **Part 2: Secure File Transmission with SCP and SFTP on Linux**
 
 
 
@@ -52,8 +51,8 @@ Prepare the following operating systems for today’s lab:
 2. Successfully perform a file upload and download from your local computer to your Linux cloud VM using the **<code>scp</code></strong> command.
     1. Upload some cybersecurity meme images to the sftp directory to share with your classmate.
 
-<h4><strong>Part 3: SSH public key authentication on Linux</strong></h4>
 
+#### <strong>Part 3: SSH public key authentication on Linux</strong>
 
 On your Linux VM in the cloud:
 
@@ -108,8 +107,8 @@ On your Linux VM in the cloud:
 
     10. Document your setup and file transmission process and confirmations with screenshots and descriptions.
 
-<h4>**Part 4: Encryption and Decryption on Linux**</h4>
 
+#### **Part 4: Encryption and Decryption on Linux**
 
 Let’s take a look at where Linux stores user credentials.
 
@@ -137,8 +136,8 @@ Let’s take a look at where Linux stores user credentials.
 
 **That said, what are you wanting here? We haven’t really touched password dumping yet, and it seems like a big ask to mimikatz or use john the ripper as it is a stretch goal? Anyways, I don’t think password dumping works when you know the password.LMFAO**
 
-<h4>**Part 5: Report Via End-User Training**</h4>
 
+#### **Part 5: Report Via End-User Training**
 
 Your CISO asked you to present what you learned at an all-team meeting, so all the employees who send files frequently can learn to do so safely. Conclude your submission with some brief end-user training to address the following:
 
